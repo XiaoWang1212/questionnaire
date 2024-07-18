@@ -17,15 +17,14 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from mysite.views import index, delpost, contact, post2db
+from mysite.views import contact, fillQA, thanks
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", index),
-    path("delpost/<int:pid>/<str:del_pass>/", delpost),
-    path("contact/", contact),
-    path("post2db/", post2db),
+    path("", fillQA),
+    path("contact/", contact, name='contact'),
+    path("thanks/", thanks, name='thanks'),
     path("captcha/", include("captcha.urls")),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

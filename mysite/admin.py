@@ -1,9 +1,7 @@
 from django.contrib import admin
 from mysite import models
 # Register your models here.
+class PostReply(admin.ModelAdmin):
+    list_display = ('name', 'student_ID', 'question1', 'question2', 'question3')
 
-class PostAdmin(admin.ModelAdmin):
-    list_display = ('nickname', 'message', 'enabled', 'pub_time')
-    ordering = ('-pub_time',)
-admin.site.register(models.Mood)
-admin.site.register(models.Post, PostAdmin)
+admin.site.register(models.Questionnaire, PostReply)
