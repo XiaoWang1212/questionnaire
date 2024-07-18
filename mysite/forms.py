@@ -1,7 +1,5 @@
 from django import forms
 from mysite import models
-from captcha.fields import CaptchaField
-
 class ContactForm(forms.Form):
     CITY = [
         ('BLR', 'Bangalore'),
@@ -17,7 +15,6 @@ class ContactForm(forms.Form):
     user_message = forms.CharField(label=" 你的意見 ", widget=forms.Textarea)
     
 class PostForm(forms.ModelForm):
-    captha = CaptchaField()
     class Meta:
         model = models.Post
         fields = ['mood', 'nickname', 'message', 'del_pass']

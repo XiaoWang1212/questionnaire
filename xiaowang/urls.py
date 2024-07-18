@@ -29,5 +29,4 @@ urlpatterns = [
     path("post/", posting),
     path("contact/", contact),
     path("post2db/", post2db),
-    path("captcha/", include("captcha.urls")),
-]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
