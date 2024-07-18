@@ -68,18 +68,14 @@ def contact(request):
         if form.is_valid():
             message = '感謝您的聯繫!'
             user_name = form.cleaned_data['user_name']
-            user_city = form.cleaned_data['user_city']
-            user_school = form.cleaned_data['user_school']
             user_email = form.cleaned_data['user_email']
             user_message = form.cleaned_data['user_message']
             
             mail_body = u'''
             網友姓名{}
-            居住城市{}
-            是否在學{}
             電子郵件{}
             反應意見 : 如下
-            {}'''.format(user_name, user_city, user_school, user_email, user_message)
+            {}'''.format(user_name, user_email, user_message)
             
             email = EmailMessage( '來自【靠背中央】網站的網友意見',
                                  mail_body,
