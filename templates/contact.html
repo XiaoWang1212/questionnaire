@@ -18,9 +18,17 @@
             <h3>寫信給管理員</h3>
         </div>
         <div class="card-body">
-            {{ form.as_p }}
+            <!--{{ form.as_p }}-->
+            <p><label for="id_user_name">您的姓名 :</label><input id="id_user_name" 
+                maxlength="50" name="user_name" type="text" value="李祿" /></p>
+            <p><label for="id_user_email">電子郵件 :</label><input id="id_user_email" 
+                name="user_email" type="email" /></p>
+            <p><label for="id_user_message">您的意見 :</label><textarea cols="40"
+                id="id_user_message" name="user_message" rols="10"></textarea></p>
         </div>
         <div class="card-footer">
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <div class="g-recaptcha" data-sitekey="6LdrQBIqAAAAANGRlzisXic9Rbhq3NRShOMaLIHj"></div>
             <input type="submit" value="送出">
             </form>
         </div>        
