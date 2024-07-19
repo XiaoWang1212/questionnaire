@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect
 from mysite import models, forms
 from django.core.mail import EmailMessage
 
+def post(request, slug=None):    
+    questionnaires = models.Questionnaire.objects.all()
+    return render(request, 'post.html', locals())
+
 def listing(request):
     posts = models.Post.objects.filter(enabled=True).order_by('-pub_time')[:150]
     moods = models.Mood.objects.all()
@@ -36,11 +40,17 @@ def contact(request):
 def fillQA(request):
     if request.method == 'POST':
         QA_form = forms.Receive(request.POST)
-        if QA_form.is_valid():
-            QA_form.save()
-            return redirect('thanks')
+        student_ID = request.POST.get('student_ID')
+
+        # 檢查學號是否早已存在
+        if models.Questionnaire.objects.filter(student_ID=student_ID).exists():
+                message = "該學號已填寫過，不能填寫了喔 ! (如有問題請通知管理員)"
         else:
-            message = "每個問題都要填寫喔~"
+            if QA_form.is_valid():
+                QA_form.save()
+                return redirect('thanks') 
+            else:
+                message = "每個問題都要填寫喔~"
     else:
         QA_form = forms.Receive()
         message = "每個問題都要填寫喔~"

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}問卷列表{% endblock title %}
+{% block content %}
+<div class='container'>
+    <h2>問卷列表</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>編號</th>
+                <th>問題一</th>
+                <th>問題二</th>
+                <th>問題三</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for num in questionnaires %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ num.question1 }}</td>
+                <td>{{ num.question2 }}</td>
+                <td>{{ num.question3 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

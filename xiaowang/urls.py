@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from mysite.views import contact, fillQA, thanks
+from mysite.views import contact, fillQA, thanks, post
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -26,5 +26,6 @@ urlpatterns = [
     path("", fillQA),
     path("contact/", contact, name='contact'),
     path("thanks/", thanks, name='thanks'),
+    path("post/", post, name="post"),
     path("captcha/", include("captcha.urls")),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
