@@ -2,7 +2,7 @@
 {% extends "base.html" %}
 {% block title %}聯絡管理員{% endblock title %}
 {% block content %}
-<div class='container'>
+<div class='containerContact'>
     {% if message %}
     <div class="alert alert-warning">{{ message }}</div>
     {{ user_name }}<br />
@@ -19,7 +19,7 @@
         </div>
         <div class="card-body">
             <!--{{ form.as_p }}-->
-            <p><label for="id_user_name">您的姓名 :</label>
+            <p><label for="id_user_name" >您的姓名 :</label>
                 <input id="id_user_name" maxlength="5" name="user_name" type="text" value="李祿" style="width: 25%; " />
             </p>
             <p><label for="id_user_email">電子郵件 :</label>
