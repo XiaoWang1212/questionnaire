@@ -44,7 +44,7 @@ def fillQA(request):
 
         # 檢查學號是否早已存在
         if models.Questionnaire.objects.filter(student_ID=student_ID).exists():
-                message = "該學號已填寫過，不能填寫了喔 ! (如有問題請通知管理員)"
+            message = "該學號已填寫過，不能填寫了喔 ! (如有問題請通知管理員)"
         else:
             if QA_form.is_valid():
                 QA_form.save()
