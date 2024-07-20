@@ -2,7 +2,7 @@ from django.contrib import admin
 from mysite import models
 # Register your models here.
 class PostReply(admin.ModelAdmin):
-    list_display = ('name', 'student_ID', 'question1', 'question2', 'question3')
+    list_display = ('name', 'student_ID', 'question1', 'trait1', 'trait2', 'trait3', 'question3', 'line_id', 'instagram')
 
 admin.site.register(models.Questionnaire, PostReply)
 
