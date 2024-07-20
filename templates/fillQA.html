@@ -3,6 +3,7 @@
 {% block title %}問卷填寫{% endblock title %}
 {% block content %}
 <div class='container'>
+    <!--警示訊息-->
 {% if message %}
     <div class="alert alert-warning">{{ message }}</div>
 {% endif %}
@@ -11,6 +12,7 @@
         <!--<table>{{ QA_form.as_table }}</table>-->
         <table>
             <tr>
+                <!--label是提示user要打什麼，input是輸入框並給後台資訊-->
                 <th><label for="user_name">您的姓名 :</label></th>
                 <td><input type="text" id="user_name" name="name" maxlength="4" placeholder="请输入姓名" /></td>
             </tr>
@@ -39,10 +41,13 @@
             <tr>
                 <td colspan="2"><textarea id="Q3" name="question3" rows="4" cols="50"></textarea></td>
             </tr>
-        </table>        
+        </table> 
+        <!--防機器人-->       
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <div class="g-recaptcha" data-sitekey="6LdrQBIqAAAAANGRlzisXic9Rbhq3NRShOMaLIHj"></div>
+        <!--送出按鈕-->
         <input type="submit" value=" 送出 ">
+        <!--清除按鈕-->
         <input type="reset" value=" 清除重填 ">
     </form>
 </div>
