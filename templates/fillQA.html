@@ -1,9 +1,4 @@
 <!-- fillQA.html -->
-<<<<<<< HEAD
-{% extends "base.html" %} {% block title %}問卷填寫{% endblock title %} {% block content %}
-<div class="container">
-    {% if message %}
-=======
 {% extends "base.html" %}
 {% block title %}問卷填寫{% endblock title %}
 {% block content %}
@@ -17,21 +12,10 @@
         {% csrf_token %}
         <!--<table>{{ QA_form.as_table }}</table>-->
         <table>
-<<<<<<< HEAD
-            <tr class="namesection">
-                <td>
-                    <label for="user_name">您的姓名 :</label><br />
-                    <div class="input-container">
-                        <input type="text" id="user_name" name="name" maxlength="4" placeholder="请输入姓名"
-                            class="full-width-input" />
-                    </div>
-                </td>
-=======
             <tr>
                 <!--label是提示user要打什麼，input是輸入框並給後台資訊-->
                 <th><label for="user_name">您的姓名 :</label></th>
                 <td><input type="text" id="user_name" name="name" maxlength="4" placeholder="请输入姓名" /></td>
->>>>>>> 7c597902592e7011ac06ea96bdcb22ceb8933ea8
             </tr>
             <tr>
                 <td>
