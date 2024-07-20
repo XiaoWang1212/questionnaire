@@ -1,0 +1,10 @@
+.namesection{
+    background-color: rgb(158, 0, 0);
+    max-width: 50%;
+    border-radius: 20px;
+}
+
+.full-width-input{
+    border-radius: 10px;
+    border-width: 0dvh;
+}

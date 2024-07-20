@@ -1,49 +1,64 @@
 <!-- fillQA.html -->
-{% extends "base.html" %}
-{% block title %}問卷填寫{% endblock title %}
-{% block content %}
-<div class='container'>
-{% if message %}
+{% extends "base.html" %} {% block title %}問卷填寫{% endblock title %} {% block content %}
+<div class="container">
+    {% if message %}
     <div class="alert alert-warning">{{ message }}</div>
-{% endif %}
+    {% endif %}
     <form name="my questionnaire" action="." method="POST">
         {% csrf_token %}
         <!--<table>{{ QA_form.as_table }}</table>-->
         <table>
-            <tr>
-                <th><label for="user_name">您的姓名 :</label></th>
-                <td><input type="text" id="user_name" name="name" maxlength="4" placeholder="请输入姓名" /></td>
+            <tr class="namesection">
+                <td>
+                    <label for="user_name">您的姓名 :</label><br />
+                    <div class="input-container">
+                        <input type="text" id="user_name" name="name" maxlength="4" placeholder="请输入姓名"
+                            class="full-width-input" />
+                    </div>
+                </td>
             </tr>
             <tr>
-                <th><label for="student_id">您的學號 :</label></th>
-                <td><input type="text" id="student_id" name="student_ID" maxlength="10" placeholder="请输入學號" /></td>            
+                <td>
+                    <label for="student_id">您的學號 :</label>
+                    <div>
+                        <input type="text" id="student_id" name="student_ID" maxlength="10" placeholder="请输入學號" />
+                    </div>
+                </td>
             </tr>
             <tr>
                 <th><label for="Q1">問題一 :</label></th>
                 <td><small>您最喜歡的大學課程是哪一門？為什麼？</small></td>
             </tr>
             <tr>
-                <td colspan="2"><textarea id="Q1" name="question1" rows="4" cols="50"></textarea></td>
+                <td colspan="2">
+                    <textarea id="Q1" name="question1" rows="4" cols="50"></textarea>
+                </td>
             </tr>
             <tr>
                 <th><label for="Q2">問題二 :</label></th>
-                <td><small>請用三個詞來形容您的個性特質，並解釋為什麼這些詞最能代表您？</small></td>
+                <td>
+                    <small>請用三個詞來形容您的個性特質，並解釋為什麼這些詞最能代表您？</small>
+                </td>
             </tr>
             <tr>
-                <td colspan="2"><textarea id="Q2" name="question2" rows="4" cols="50"></textarea></td>
+                <td colspan="2">
+                    <textarea id="Q2" name="question2" rows="4" cols="50"></textarea>
+                </td>
             </tr>
             <tr>
                 <th><label for="Q3">問題三 :</label></th>
                 <td><small>你日常中喜歡做什麼事？(ex.讀書、各式運動等…)</small></td>
             </tr>
             <tr>
-                <td colspan="2"><textarea id="Q3" name="question3" rows="4" cols="50"></textarea></td>
+                <td colspan="2">
+                    <textarea id="Q3" name="question3" rows="4" cols="50"></textarea>
+                </td>
             </tr>
-        </table>        
+        </table>
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <div class="g-recaptcha" data-sitekey="6LdrQBIqAAAAANGRlzisXic9Rbhq3NRShOMaLIHj"></div>
-        <input type="submit" value=" 送出 ">
-        <input type="reset" value=" 清除重填 ">
+        <input type="submit" value=" 送出 " />
+        <input type="reset" value=" 清除重填 " />
     </form>
 </div>
 {% endblock content %}

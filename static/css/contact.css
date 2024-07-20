@@ -1,31 +1,36 @@
 /* 基本樣式 */
+
 body {
     font-family: 微軟正黑體, Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e8e8e8;
     margin: 0;
     padding: 0;
 }
 
 /* 總容器樣式 */
 .containerContact {
-    margin-top: 50px;
-    max-width: 800px;
+    
+    /* 子元素在交叉軸上居中對齊 */
+    height: 100vh;
+    /* 使容器填滿整個視窗高度 */
+    
     padding: 20px;
-    background-color: #59ff00;
+    background-color: #ff00c8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 /* 卡片樣式 */
 .card {
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 卡片標題樣式 */
 .card-header {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #51a5ff;
+    color: #ff6060;
     padding: 15px;
     border-radius: 8px 8px 0 0;
     font-size: 1.25rem;
