@@ -1,23 +1,16 @@
-<!-- fillQA.html -->
-<<<<<<< HEAD
-{% extends "base.html" %} {% block title %}問卷填寫{% endblock title %} {% block content %}
+{% extends "base.html" %}
+
+{% block title %}問卷填寫{% endblock title %}
+
+{% block content %}
 <div class="container">
     {% if message %}
-=======
-{% extends "base.html" %}
-{% block title %}問卷填寫{% endblock title %}
-{% block content %}
-<div class='container'>
-    <!--警示訊息-->
-{% if message %}
->>>>>>> 7c597902592e7011ac06ea96bdcb22ceb8933ea8
     <div class="alert alert-warning">{{ message }}</div>
     {% endif %}
     <form name="my questionnaire" action="." method="POST">
         {% csrf_token %}
         <!--<table>{{ QA_form.as_table }}</table>-->
         <table>
-<<<<<<< HEAD
             <tr class="namesection">
                 <td>
                     <label for="user_name">您的姓名 :</label><br />
@@ -26,12 +19,6 @@
                             class="full-width-input" />
                     </div>
                 </td>
-=======
-            <tr>
-                <!--label是提示user要打什麼，input是輸入框並給後台資訊-->
-                <th><label for="user_name">您的姓名 :</label></th>
-                <td><input type="text" id="user_name" name="name" maxlength="4" placeholder="请输入姓名" /></td>
->>>>>>> 7c597902592e7011ac06ea96bdcb22ceb8933ea8
             </tr>
             <tr>
                 <td>
@@ -70,22 +57,11 @@
                     <textarea id="Q3" name="question3" rows="4" cols="50"></textarea>
                 </td>
             </tr>
-<<<<<<< HEAD
         </table>
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <div class="g-recaptcha" data-sitekey="6LdrQBIqAAAAANGRlzisXic9Rbhq3NRShOMaLIHj"></div>
         <input type="submit" value=" 送出 " />
         <input type="reset" value=" 清除重填 " />
-=======
-        </table> 
-        <!--防機器人-->       
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-        <div class="g-recaptcha" data-sitekey="6LdrQBIqAAAAANGRlzisXic9Rbhq3NRShOMaLIHj"></div>
-        <!--送出按鈕-->
-        <input type="submit" value=" 送出 ">
-        <!--清除按鈕-->
-        <input type="reset" value=" 清除重填 ">
->>>>>>> 7c597902592e7011ac06ea96bdcb22ceb8933ea8
     </form>
 </div>
 {% endblock content %}

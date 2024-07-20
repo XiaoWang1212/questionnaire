@@ -3,7 +3,7 @@
 {% block title %}聯絡管理員{% endblock title %}
 {% block content %}
 <div class='containerContact'>
-    <!-- 提示訊息 -->>
+    <!-- 提示訊息 -->
     {% if message %}
     <div class="alert alert-warning">{{ message }}</div>
     {{ user_name }}<br />
@@ -25,7 +25,7 @@
             <p><label for="id_user_email">電子郵件 :</label>
                 <input id="id_user_email" maxlength="30" name="user_email" type="email" style="width: 25%;" />
             </p>
-            <!--textarea和input很像，但打的字數沒有限制-->>
+            <!--textarea和input很像，但打的字數沒有限制-->
             <p><label for="id_user_message">您的意見 :</label>
                 <textarea cols="40" id="id_user_message" name="user_message" rols="10"></textarea>
             </p>
