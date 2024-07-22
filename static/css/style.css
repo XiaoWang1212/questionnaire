@@ -1,74 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-li,
-a,
-button {
-    font-weight: 500px;
-    font-size: 16px;
-    color: #1F0737;
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    font-family: 微軟正黑體;
-    color: #1F0737;
-    background-color: #F1E1FF;
-}
-
-.navbar-nav {
-    padding:0;
-    margin:0;
-    list-style: none;
-}
-
-.navbar-nav li {
-    display: inline-block;
-    padding: 0px 10px;
-}
-
-.navbar-nav li a {
-    transition: all 0.3s ease 0s;
-}
-
-.navbar-nav li a:hover {
-    color: #3E74AE;
-}
-
-.navbar-brand {
-    font-weight: 450;
-    font-family: "Montserrat", sans-serif;
-}
-
-.contactus a {
-    padding: 9px 18px;
-    background-color: #9412BC;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: #FCFCFC;
-}
-
-.contactus a:hover {
-    background-color: #ba76cf;
-}
-
 .container {
     background: #FCFCFC;
-    font-family: 微軟正黑體;
+    font-family: "Montserrat", sans-serif;
     color: #3E74AE;
     display: flex;
     flex-direction: column;
-    /* 确保子元素垂直排列 */
     justify-content: center;
     align-items: center;
     padding: 20px 15px 20px 10px;
@@ -80,13 +17,18 @@ header {
 }
 
 .insidecontainer {
-    width: 150px;
+    width: 250px;
+}
+
+.inincontrol{
+    width: 400px;
 }
 
 .entryarea {
     position: relative;
     height: 60px;
     line-height: 60px;
+    z-index: 1;
 }
 
 .entryarea input {
@@ -99,7 +41,7 @@ header {
     border-radius: 5px;
     border: 1px solid #3E74AE;
     transition: 0.2s ease;
-    z-index: 1;
+    z-index: 2;
 }
 
 .smallcontrol {
@@ -128,11 +70,16 @@ header {
     color: #52BFEA;
     height: 30px;
     line-height: 30px;
-    padding-left: 2px;
-    padding-right: 2px;
-    transform: translate(-10px, -5px) scale(0.7);
+    padding-left: 4px;
+    padding-right: 4px;
+    transform: translate(-12px, -5px) scale(0.7);
     background: #FCFCFC;
     z-index: 111;
+}
+
+.con{
+    margin:10px 0;
+    margin-bottom: 20px;
 }
 
 .questioncontrol {
@@ -167,18 +114,13 @@ header {
     color: #52BFEA;
 }
 
-.g-recaptcha {
-    margin-top: 10px;
-}
-
 .submit {
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .btn-secondary {
     font-size: 15px;
-    padding: 10px 15px;
-    margin: 0 5px;
+    padding: 8px 15px;
     border: 1px solid #3E74AE;
     border-radius: 5px;
     background-color: #f8f9fa;
@@ -190,13 +132,6 @@ header {
     border: 2px solid #52BFEA;
     color: #52BFEA;
     font-size: 20px;
+    background-color:#FCFCFC;
 }
 
-.text-center-mt-4 p {
-    background-color: #F1E1FF;
-    color: #003060;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
