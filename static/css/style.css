@@ -1,40 +1,202 @@
-form {
-    width: 100%;
-    max-width: max-content;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-label {
-    font-weight: bold;
+li,
+a,
+button {
+    font-weight: 500px;
+    font-size: 16px;
+    color: #1F0737;
+    text-decoration: none;
 }
 
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    font-family: 微軟正黑體;
+    color: #1F0737;
+    background-color: #F1E1FF;
 }
 
-textarea {
-    resize: none; /* 禁止用戶調整 */
-    height: auto; /* 高度可自由調整 */
+.navbar-nav {
+    padding:0;
+    margin:0;
+    list-style: none;
 }
 
-small {
-    display: block;
-    margin-top: 5px;
-    color: #555;
+.navbar-nav li {
+    display: inline-block;
+    padding: 0px 10px;
 }
 
-input[type="submit"], input[type="reset"] {
-    padding: 10px 20px;
-    margin: 10px 5px;
-    background-color: #ff0000;
-    color: #fff;
+.navbar-nav li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-nav li a:hover {
+    color: #3E74AE;
+}
+
+.navbar-brand {
+    font-weight: 450;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contactus a {
+    padding: 9px 18px;
+    background-color: #9412BC;
     border: none;
+    border-radius: 20px;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #FCFCFC;
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #64afff;
+.contactus a:hover {
+    background-color: #ba76cf;
+}
+
+.container {
+    background: #FCFCFC;
+    font-family: 微軟正黑體;
+    color: #3E74AE;
+    display: flex;
+    flex-direction: column;
+    /* 确保子元素垂直排列 */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 10px;
+}
+
+.table-striped {
+    display: flex;
+    justify-content: center;
+}
+
+.insidecontainer {
+    width: 150px;
+}
+
+.entryarea {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+}
+
+.entryarea input {
+    position: absolute;
+    width: 70%;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #3E74AE;
+    transition: 0.2s ease;
+    z-index: 1;
+}
+
+.smallcontrol {
+    position: absolute;
+    font-size: 1em;
+    font-weight: 300;
+    color: #3E74AE;
+    font-weight: 350;
+    white-space: nowrap;
+    margin-left: 12px;
+    margin-top: -9px;
+    font-family: "微軟正黑體";
+    z-index: 2;
+}
+
+.entryarea input:hover,
+.entryarea input:valid,
+.entryarea input:focus {
+    color: #52BFEA;
+    border: 2px solid #52BFEA;
+}
+
+.entryarea input:hover+.smallcontrol,
+.entryarea input:valid+.smallcontrol,
+.entryarea input:focus+.smallcontrol {
+    color: #52BFEA;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 2px;
+    padding-right: 2px;
+    transform: translate(-10px, -5px) scale(0.7);
+    background: #FCFCFC;
+    z-index: 111;
+}
+
+.questioncontrol {
+    min-height: 140px;
+    padding-top: 5px;
+}
+
+.smallq {
+    font-size: 13px;
+}
+
+.te textarea,
+.te input {
+    border-radius: 5px;
+    border: 1px solid #3E74AE;
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-top: 5px;
+    height: 50%;
+    width: 98%;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.te textarea:hover,
+.te input:hover,
+.te textarea:focus,
+.te input:focus,
+.te textarea:valid,
+.te input:valid {
+    border: 2px solid #52BFEA;
+    color: #52BFEA;
+}
+
+.g-recaptcha {
+    margin-top: 10px;
+}
+
+.submit {
+    padding-top: 15px;
+}
+
+.btn-secondary {
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #3E74AE;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #3E74AE;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border: 2px solid #52BFEA;
+    color: #52BFEA;
+    font-size: 20px;
+}
+
+.text-center-mt-4 p {
+    background-color: #F1E1FF;
+    color: #003060;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
