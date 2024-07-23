@@ -47,10 +47,18 @@ def fillQA(request):
             message = "該學號已填寫過，不能填寫了喔 ! (如有問題請通知管理員)"
         else:
             if QA_form.is_valid():
-                QA_form.save()
-                return redirect('thanks') 
+                form_data = QA_form.cleaned_data
+                line_id = form_data.get('line_id') or '##########'
+                instagram = form_data.get('instagram') or '##########'
+
+                questionnaire = QA_form.save(commit=False)
+                questionnaire.line_id = line_id
+                questionnaire.instagram = instagram
+                questionnaire.save()
+                
+                return redirect('thanks')
             else:
-                message = "每個問題都要填寫喔~"
+                message = QA_form.errors.as_text()
     else:
         QA_form = forms.Receive()
         message = "每個問題都要填寫喔~"
