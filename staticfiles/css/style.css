@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.container {
+    background: #FCFCFC;
+    font-family: "Montserrat", sans-serif;
+    color: #3E74AE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 10px;
+}
+
+.table-striped {
+    display: flex;
+    justify-content: center;
+}
+
+.insidecontainer {
+    width: 250px;
+}
+
+.inincontrol{
+    width: 400px;
+}
+
+.entryarea {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    z-index: 1;
+}
+
+.entryarea input {
+    position: absolute;
+    width: 70%;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #3E74AE;
+    transition: 0.2s ease;
+    z-index: 2;
+}
+
+.smallcontrol {
+    position: absolute;
+    font-size: 1em;
+    font-weight: 300;
+    color: #3E74AE;
+    font-weight: 350;
+    white-space: nowrap;
+    margin-left: 12px;
+    margin-top: -9px;
+    font-family: "微軟正黑體";
+    z-index: 2;
+}
+
+.entryarea input:hover,
+.entryarea input:valid,
+.entryarea input:focus {
+    color: #52BFEA;
+    border: 2px solid #52BFEA;
+}
+
+.entryarea input:hover+.smallcontrol,
+.entryarea input:valid+.smallcontrol,
+.entryarea input:focus+.smallcontrol {
+    color: #52BFEA;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    transform: translate(-12px, -5px) scale(0.7);
+    background: #FCFCFC;
+    z-index: 111;
+}
+
+.con{
+    margin:10px 0;
+    margin-bottom: 20px;
+}
+
+.questioncontrol {
+    min-height: 140px;
+    padding-top: 5px;
+}
+
+.smallq {
+    font-size: 13px;
+}
+
+.te textarea,
+.te input {
+    border-radius: 5px;
+    border: 1px solid #3E74AE;
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-top: 5px;
+    height: 50%;
+    width: 98%;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.te textarea:hover,
+.te input:hover,
+.te textarea:focus,
+.te input:focus,
+.te textarea:valid,
+.te input:valid {
+    border: 2px solid #52BFEA;
+    color: #52BFEA;
+}
+
+.submit {
+    padding-top: 10px;
+}
+
+.btn-secondary {
+    font-size: 15px;
+    padding: 8px 15px;
+    border: 1px solid #3E74AE;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #3E74AE;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border: 2px solid #52BFEA;
+    color: #52BFEA;
+    font-size: 20px;
+    background-color:#FCFCFC;
+}
+

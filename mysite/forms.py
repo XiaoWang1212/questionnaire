@@ -23,3 +23,13 @@ class Receive(forms.ModelForm):
         self.fields['question3'].label = " 第三個問題 "
         self.fields['line_id'].label = " Line "
         self.fields['instagram'].label = " IG "
+        
+    def clean(self):
+        cleaned_data = super().clean()
+        line_id = cleaned_data.get('line_id')
+        instagram = cleaned_data.get('instagram')
+        
+        if not line_id and not instagram:
+            raise forms.ValidationError("聯絡方式至少要填一個喔~")
+        
+        return cleaned_data
