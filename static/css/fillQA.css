@@ -16,12 +16,19 @@
     justify-content: center;
 }
 
+.intrait {
+    width: 150px;
+    height: 160px;
+    padding-top: 10px; /* Adjust the margin to reduce space */
+}
+
 .insidecontainer {
     width: 250px;
 }
 
-.inincontrol{
+.inincontrol {
     width: 400px;
+    height: 100px;
 }
 
 .entryarea {
@@ -64,9 +71,9 @@
     border: 2px solid #52BFEA;
 }
 
-.entryarea input:hover+.smallcontrol,
-.entryarea input:valid+.smallcontrol,
-.entryarea input:focus+.smallcontrol {
+.entryarea input:hover + .smallcontrol,
+.entryarea input:valid + .smallcontrol,
+.entryarea input:focus + .smallcontrol {
     color: #52BFEA;
     height: 30px;
     line-height: 30px;
@@ -77,18 +84,26 @@
     z-index: 111;
 }
 
-.con{
-    margin:10px 0;
+.con {
+    margin: 10px 0;
     margin-bottom: 20px;
 }
 
 .questioncontrol {
-    min-height: 140px;
+    min-height: 80px; /* Adjust height to reduce space */
     padding-top: 5px;
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.questioncontrolcontrol {
+    min-height: 80px; /* Adjust height to reduce space */
+    padding-top: 5px;
+    margin-bottom: 10px; /* Adjust bottom margin to reduce space */
 }
 
 .smallq {
     font-size: 13px;
+    margin-bottom: 5px; /* Adjust margin to separate from inputs */
 }
 
 .te textarea,
@@ -132,6 +147,5 @@
     border: 2px solid #52BFEA;
     color: #52BFEA;
     font-size: 20px;
-    background-color:#FCFCFC;
+    background-color: #FCFCFC;
 }
-
