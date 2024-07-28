@@ -11,6 +11,18 @@
     padding: 20px 15px 20px 10px;
 }
 
+.alert-alert-warning{
+    width: 55vh;
+    height: 45px;
+    background: #ffff9a;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
 .table-striped {
     display: flex;
     justify-content: center;
