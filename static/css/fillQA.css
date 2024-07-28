@@ -17,9 +17,8 @@
 }
 
 .intrait {
-    width: 150px;
-    height: 160px;
-    padding-top: 10px; /* Adjust the margin to reduce space */
+    width: 250px;
+    height: 180px;
 }
 
 .insidecontainer {
@@ -28,7 +27,7 @@
 
 .inincontrol {
     width: 400px;
-    height: 100px;
+    height: 65px;
 }
 
 .entryarea {
@@ -96,9 +95,9 @@
 }
 
 .questioncontrolcontrol {
-    min-height: 80px; /* Adjust height to reduce space */
+    min-height: 120px;
     padding-top: 5px;
-    margin-bottom: 10px; /* Adjust bottom margin to reduce space */
+    margin-bottom: 10px;
 }
 
 .smallq {
@@ -129,8 +128,13 @@
     color: #52BFEA;
 }
 
+.sub{
+    height:100px;
+    margin-top:5px;
+}
+
 .submit {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .btn-secondary {
