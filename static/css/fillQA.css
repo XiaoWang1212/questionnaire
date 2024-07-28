@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 .container {
-    background: #FCFCFC;
+    background: #ffffff;
     font-family: "Montserrat", sans-serif;
-    color: #3E74AE;
+    color: #d499c4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,13 +14,16 @@
 .alert-alert-warning{
     width: 60vh;
     height: 45px;
-    background: #ffff9a;
+    background: #d499c4;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
     border-radius: 5px;
+    color:#ffffff;
+    font-weight: 300;
+    font-family: 微軟正黑體;
 }
 
 .table-striped {
@@ -57,7 +60,7 @@
     padding: 0 10px;
     line-height: 40px;
     border-radius: 5px;
-    border: 1px solid #3E74AE;
+    border: 1px solid #d499c4;
     transition: 0.2s ease;
     z-index: 2;
 }
@@ -66,7 +69,7 @@
     position: absolute;
     font-size: 1em;
     font-weight: 300;
-    color: #3E74AE;
+    color: #d499c4;
     font-weight: 350;
     white-space: nowrap;
     margin-left: 12px;
@@ -78,14 +81,14 @@
 .entryarea input:hover,
 .entryarea input:valid,
 .entryarea input:focus {
-    color: #52BFEA;
-    border: 2px solid #52BFEA;
+    color: #d666b8;
+    border: 2px solid #d666b8;
 }
 
 .entryarea input:hover + .smallcontrol,
 .entryarea input:valid + .smallcontrol,
 .entryarea input:focus + .smallcontrol {
-    color: #52BFEA;
+    color: #d666b8;
     height: 30px;
     line-height: 30px;
     padding-left: 4px;
@@ -114,13 +117,15 @@
 
 .smallq {
     font-size: 13px;
-    margin-bottom: 5px; /* Adjust margin to separate from inputs */
+    margin-bottom: 5px;
+    font-weight:400;
+    font-family: 微軟正黑體;
 }
 
 .te textarea,
 .te input {
     border-radius: 5px;
-    border: 1px solid #3E74AE;
+    border: 1px solid #d499c4;
     margin-top: 5px;
     padding-left: 8px;
     padding-top: 5px;
@@ -136,8 +141,8 @@
 .te input:focus,
 .te textarea:valid,
 .te input:valid {
-    border: 2px solid #52BFEA;
-    color: #52BFEA;
+    border: 2px solid #d666b8;
+    color: #d666b8;
 }
 
 .sub{
@@ -152,16 +157,16 @@
 .btn-secondary {
     font-size: 15px;
     padding: 8px 15px;
-    border: 1px solid #3E74AE;
+    border: 1px solid #d499c4;
     border-radius: 5px;
     background-color: #f8f9fa;
-    color: #3E74AE;
+    color: #d499c4;
     transition: 0.3s ease;
 }
 
 .btn-secondary:hover {
-    border: 2px solid #52BFEA;
-    color: #52BFEA;
+    border: 2px solid #d666b8;
+    color: #d666b8;
     font-size: 20px;
     background-color: #FCFCFC;
 }
