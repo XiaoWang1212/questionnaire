@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.containerContact {
+    background: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    color: #d499c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 10px;
+}
+
+.alert {
+    width: 60vh;
+    height: 45px;
+    background: #d499c4;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    color:#ffffff;
+    font-weight: 300;
+    font-family: 微軟正黑體;
+}
+
+.card {
+    width: 60%;
+    border: 1px solid #d499c4;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #d499c4;
+    padding-top: 15px;
+
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #d499c4;
+}
+
+
+.card-footer {
+    padding: 10px;
+    text-align: right;
+    background-color: #f8f9fa;
+    border-top: 1px solid #d499c4;
+}
+
+.g-recaptcha {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    padding: 8px 15px;
+    border: 1px solid #d499c4;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #d499c4;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #d666b8;
+    color: #d666b8;
+    font-size: 20px;
+    background-color: #FCFCFC;
+}
+
+.insidecontainer {
+    width: 250px;
+}
+
+.entryarea {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    z-index: 1;
+}
+
+.entryarea input {
+    position: absolute;
+    width: 70%;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #d499c4;
+    transition: 0.2s ease;
+    z-index: 2;
+}
+
+.smallcontrol {
+    position: absolute;
+    font-size: 1em;
+    font-weight: 300;
+    color: #d499c4;
+    font-weight: 350;
+    white-space: nowrap;
+    margin-left: 12px;
+    margin-top: -9px;
+    font-family: "微軟正黑體";
+    z-index: 2;
+}
+
+.entryarea input:hover,
+.entryarea input:valid,
+.entryarea input:focus {
+    color: #d666b8;
+    border: 2px solid #d666b8;
+}
+
+.entryarea input:hover + .smallcontrol,
+.entryarea input:valid + .smallcontrol,
+.entryarea input:focus + .smallcontrol {
+    color: #d666b8;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    transform: translate(-12px, -5px) scale(0.7);
+    background: #FCFCFC;
+    z-index: 111;
+}
+
+.questioncontrol {
+    min-height: 80px; /* Adjust height to reduce space */
+    padding-top: 5px;
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.te textarea,
+.te input {
+    border-radius: 5px;
+    border: 1px solid #d499c4;
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-top: 5px;
+    height: 50%;
+    width: 98%;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.te textarea:hover,
+.te input:hover,
+.te textarea:focus,
+.te input:focus,
+.te textarea:valid,
+.te input:valid {
+    border: 2px solid #d666b8;
+    color: #d666b8;
+}

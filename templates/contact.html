@@ -19,16 +19,28 @@
         </div>
         <div class="card-body">
             <!--{{ form.as_p }}--><!--label是提示user要打什麼，input是輸入框並給後台資訊-->
-            <p><label for="id_user_name" >您的姓名 :</label>
-                <input id="id_user_name" maxlength="5" name="user_name" type="text" value="李祿" style="width: 25%; " />
-            </p>
-            <p><label for="id_user_email">電子郵件 :</label>
-                <input id="id_user_email" maxlength="30" name="user_email" type="email" style="width: 25%;" />
-            </p>
+            <div class="insidecontainer">
+                <div class="entryarea">
+                    <input id="id_user_name" maxlength="5" name="user_name" autocomplete="off" type="text"/>
+                    <div class="smallcontrol">您的名字</div>
+                </div>
+            </div>
+            
+            <div class="insidecontainer">
+                <div class="entryarea">
+                    <input id="id_user_email" maxlength="30" name="user_email" autocomplete="off" type="email"/>
+                    <div class="smallcontrol">電子郵件</div>
+                </div>
+            </div>
+
             <!--textarea和input很像，但打的字數沒有限制-->
-            <p><label for="id_user_message">您的意見 :</label>
-                <textarea cols="40" id="id_user_message" name="user_message" rols="10"></textarea>
-            </p>
+            <div class="questioncontrol">
+                <label for="id_user_message">意見或任何問題 :</label>
+                <div class="te">
+                    <textarea cols="40" id="id_user_message" name="user_message" autocomplete="off" rols="10"></textarea>
+                </div>
+            </div>
+
         </div>
         <div class="card-footer">
             <!--防機器人-->
