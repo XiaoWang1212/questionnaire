@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-ai7^f-vokz&(zhob2jrxut4gp+r*qhbx(ht^!rg4khhc&+=&fc"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -129,11 +129,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT= BASE_DIR / 'media'
 
@@ -150,8 +149,3 @@ EMAIL_HOST_USER = "danny20041212@gmail.com"
 EMAIL_HOST_PASSWORD = "vavolqogwnqjyfvh"
 
 GOOGLE_RECAPTCHA_SECRET_KEY = "6LdrQBIqAAAAANUSZTZ9ZYMZgLXlIMyz6kzf7A4o"
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
