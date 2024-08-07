@@ -26,9 +26,6 @@ jobs:
       - name: Install dependencies
         run: |
           source xiao/bin/activate
-          pip install --upgrade pip
-          # Remove twisted-iocpsupport from requirements.txt
-          sed -i '/twisted-iocpsupport/d' requirements.txt
           pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
@@ -66,9 +63,6 @@ jobs:
         run: |
           python -m venv xiao
           source xiao/bin/activate
-          # Remove twisted-iocpsupport from requirements.txt
-          sed -i '/twisted-iocpsupport/d' requirements.txt
-          pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: 'Deploy to Azure Web App'
