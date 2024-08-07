@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+.container {
+    background: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    color: #d499c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 10px;
+}
+
+.alert-alert-warning{
+    width: 60vh;
+    height: 45px;
+    background: #d499c4;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    color:#ffffff;
+    font-weight: 300;
+    font-family: 微軟正黑體;
+}
+
+.table-striped {
+    display: flex;
+    justify-content: center;
+}
+
+.intrait {
+    width: 250px;
+    height: 180px;
+}
+
+.insidecontainer {
+    width: 250px;
+}
+
+.inincontrol {
+    width: 400px;
+    height: 65px;
+}
+
+.entryarea {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    z-index: 1;
+}
+
+.entryarea input {
+    position: absolute;
+    width: 70%;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #d499c4;
+    transition: 0.2s ease;
+    z-index: 2;
+}
+
+.smallcontrol {
+    position: absolute;
+    font-size: 1em;
+    font-weight: 300;
+    color: #d499c4;
+    font-weight: 350;
+    white-space: nowrap;
+    margin-left: 12px;
+    margin-top: -9px;
+    font-family: "微軟正黑體";
+    z-index: 2;
+}
+
+.entryarea input:hover,
+.entryarea input:valid,
+.entryarea input:focus {
+    color: #d666b8;
+    border: 2px solid #d666b8;
+}
+
+.entryarea input:hover + .smallcontrol,
+.entryarea input:valid + .smallcontrol,
+.entryarea input:focus + .smallcontrol {
+    color: #d666b8;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    transform: translate(-12px, -5px) scale(0.7);
+    background: #FCFCFC;
+    z-index: 111;
+}
+
+.con {
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+.questioncontrol {
+    min-height: 80px; /* Adjust height to reduce space */
+    padding-top: 5px;
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.questioncontrolcontrol {
+    min-height: 60px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.smallq {
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight:400;
+    font-family: 微軟正黑體;
+}
+
+.te textarea,
+.te input {
+    border-radius: 5px;
+    border: 1px solid #d499c4;
+    margin-top: 5px;
+    padding-left: 8px;
+    padding-top: 5px;
+    height: 50%;
+    width: 98%;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+.te textarea:hover,
+.te input:hover,
+.te textarea:focus,
+.te input:focus,
+.te textarea:valid,
+.te input:valid {
+    border: 2px solid #d666b8;
+    color: #d666b8;
+}
+
+.sub{
+    height:110px;
+    margin-top:5px;
+}
+
+.submit {
+    padding-top: 15px;
+}
+
+.btn-secondary {
+    font-size: 15px;
+    padding: 8px 15px;
+    border: 1px solid #d499c4;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #d499c4;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border: 2px solid #d666b8;
+    color: #d666b8;
+    font-size: 20px;
+    background-color: #FCFCFC;
+}
