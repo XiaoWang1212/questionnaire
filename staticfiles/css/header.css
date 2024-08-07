@@ -20,15 +20,15 @@ header {
     align-items: center;
     padding: 30px 10%;
     font-family: 微軟正黑體;
-    color: #1F0737;
-    background-color:#d638ab;
-    ;
+    color: #333333ea;
+    background-color:#eccfe5;
 }
 
 .navbar-nav {
     padding:0;
     margin:0;
     list-style: none;
+    display: inline-block;
 }
 
 .navbar-nav li {
@@ -41,17 +41,23 @@ header {
 }
 
 .navbar-nav li a:hover {
-    color: #3E74AE;
+    font-size: 1.1em;
+    color: #000000;
 }
 
 .navbar-brand {
     font-weight: 450;
+    font-size: 1.5em;
     font-family: "Montserrat", sans-serif;
+}
+
+.navinline{
+    display: inline-block;
 }
 
 .contactus a {
     padding: 9px 18px;
-    background-color: #9412BC;
+    background-color: #d666b87b;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -60,6 +66,6 @@ header {
 }
 
 .contactus a:hover {
-    background-color: #ba76cf;
+    background-color: #d666b8b1;
     color: #FCFCFC;
 }

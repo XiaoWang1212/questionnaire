@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
-.containerContact {
+.container {
     background: #ffffff;
     font-family: "Montserrat", sans-serif;
     color: #d499c4;
@@ -11,70 +11,38 @@
     padding: 20px 15px 20px 10px;
 }
 
-.alert {
-    width: 450px;
+.alert-alert-warning{
+    width: 40vh;
     height: 45px;
-    background: #d499c4;
+    background: #ed9fdb;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
     border-radius: 5px;
-    color:#333333ea;
+    color:#ffffff;
     font-weight: 300;
     font-family: 微軟正黑體;
 }
 
-.card {
-    width: 60%;
-    border: 1px solid #d499c4;
-    border-radius: 5px;
-    margin-bottom: 20px;
+.table-striped {
+    display: flex;
+    justify-content: center;
 }
 
-.card-header {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #d499c4;
-    padding-top: 15px;
-
-    align-items: center;
-    font-size: 18px;
-    font-weight: 500;
-    color: #d499c4;
-}
-
-
-.card-footer {
-    padding: 10px;
-    text-align: right;
-    background-color: #f8f9fa;
-    border-top: 1px solid #d499c4;
-}
-
-.g-recaptcha {
-    margin-bottom: 10px;
-}
-
-input[type="submit"] {
-    font-size: 15px;
-    padding: 8px 15px;
-    border: 1px solid #d499c4;
-    border-radius: 5px;
-    background-color: #f8f9fa;
-    color: #d499c4;
-    transition: 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    border: 2px solid #d666b8;
-    color: #d666b8;
-    font-size: 20px;
-    background-color: #FCFCFC;
+.intrait {
+    width: 250px;
+    height: 180px;
 }
 
 .insidecontainer {
     width: 250px;
+}
+
+.inincontrol {
+    width: 400px;
+    height: 65px;
 }
 
 .entryarea {
@@ -99,7 +67,7 @@ input[type="submit"]:hover {
 
 .smallcontrol {
     position: absolute;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 300;
     color: #d499c4;
     font-weight: 350;
@@ -113,7 +81,7 @@ input[type="submit"]:hover {
 .entryarea input:hover,
 .entryarea input:valid,
 .entryarea input:focus {
-    color: #d666b8;
+    color: #a92f88;
     border: 2px solid #d666b8;
 }
 
@@ -130,10 +98,28 @@ input[type="submit"]:hover {
     z-index: 111;
 }
 
+.con {
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
 .questioncontrol {
     min-height: 80px; /* Adjust height to reduce space */
     padding-top: 5px;
     margin-bottom: 0; /* Remove bottom margin */
+}
+
+.questioncontrolcontrol {
+    min-height: 60px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.smallq {
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight:400;
+    font-family: 微軟正黑體;
 }
 
 .te textarea,
@@ -157,4 +143,30 @@ input[type="submit"]:hover {
 .te input:valid {
     border: 2px solid #d666b8;
     color: #d666b8;
+}
+
+.sub{
+    height:110px;
+    margin-top:5px;
+}
+
+.submit {
+    padding-top: 15px;
+}
+
+.btn-secondary {
+    font-size: 15px;
+    padding: 8px 15px;
+    border: 1px solid #d499c4;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #d499c4;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border: 2px solid #d666b8;
+    color: #d666b8;
+    font-size: 20px;
+    background-color: #FCFCFC;
 }

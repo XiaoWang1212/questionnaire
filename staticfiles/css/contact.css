@@ -12,7 +12,7 @@
 }
 
 .alert {
-    width: 60vh;
+    width: 450px;
     height: 45px;
     background: #d499c4;
     display: flex;
@@ -21,7 +21,7 @@
     align-items: center;
     margin-bottom: 25px;
     border-radius: 5px;
-    color:#ffffff;
+    color:#333333ea;
     font-weight: 300;
     font-family: 微軟正黑體;
 }
