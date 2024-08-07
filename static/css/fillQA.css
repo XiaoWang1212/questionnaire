@@ -14,7 +14,7 @@
 .alert-alert-warning{
     width: 60vh;
     height: 45px;
-    background: #d499c4;
+    background: #eccfe5;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -67,7 +67,7 @@
 
 .smallcontrol {
     position: absolute;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 300;
     color: #d499c4;
     font-weight: 350;
