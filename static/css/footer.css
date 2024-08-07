@@ -2,10 +2,14 @@
 
 footer {
     margin:0;
-    background-color: hsl(314, 43%, 87%);
+    background-color: #eccfe5;
     color: #333333ea;
     font-family: "Montserrat", sans-serif;
     display: flex;
     justify-content: center;
     padding: 30px;
+}
+
+footer .nonesty{
+    list-style: none;
 }
