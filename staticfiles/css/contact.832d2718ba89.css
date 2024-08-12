@@ -1,18 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
-.container {
-    /*background: #fff */
-    background: 
-        linear-gradient(
-            rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0.5) 
-        ),
-        url("/static/images/scenery.jpg");    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.containerContact {
+    background: #ffffff;
     font-family: "Montserrat", sans-serif;
-    color: #636363;
+    color: #d499c4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,38 +11,70 @@
     padding: 20px 15px 20px 10px;
 }
 
-.alert-alert-warning{
-    width:450px;
+.alert {
+    width: 450px;
     height: 45px;
-    background: #414141;
+    background: #d499c4;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
     border-radius: 5px;
-    color:#f9f9f9ea;
+    color:#333333ea;
     font-weight: 300;
     font-family: 微軟正黑體;
 }
 
-.table-striped {
-    display: flex;
-    justify-content: center;
+.card {
+    width: 60%;
+    border: 1px solid #d499c4;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.intrait {
-    width: 250px;
-    height: 180px;
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #d499c4;
+    padding-top: 15px;
+
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #d499c4;
+}
+
+
+.card-footer {
+    padding: 10px;
+    text-align: right;
+    background-color: #f8f9fa;
+    border-top: 1px solid #d499c4;
+}
+
+.g-recaptcha {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    padding: 8px 15px;
+    border: 1px solid #d499c4;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #d499c4;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #d666b8;
+    color: #d666b8;
+    font-size: 20px;
+    background-color: #FCFCFC;
 }
 
 .insidecontainer {
     width: 250px;
-}
-
-.inincontrol {
-    width: 400px;
-    height: 65px;
 }
 
 .entryarea {
@@ -69,16 +92,16 @@
     padding: 0 10px;
     line-height: 40px;
     border-radius: 5px;
-    border: 1px solid #636363;
+    border: 1px solid #d499c4;
     transition: 0.2s ease;
     z-index: 2;
 }
 
 .smallcontrol {
     position: absolute;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;
-    color: #636363;
+    color: #d499c4;
     font-weight: 350;
     white-space: nowrap;
     margin-left: 12px;
@@ -90,14 +113,14 @@
 .entryarea input:hover,
 .entryarea input:valid,
 .entryarea input:focus {
-    color: #414141;
-    border: 2px solid #414141;
+    color: #d666b8;
+    border: 2px solid #d666b8;
 }
 
 .entryarea input:hover + .smallcontrol,
 .entryarea input:valid + .smallcontrol,
 .entryarea input:focus + .smallcontrol {
-    color: #414141;
+    color: #d666b8;
     height: 30px;
     line-height: 30px;
     padding-left: 4px;
@@ -107,35 +130,16 @@
     z-index: 111;
 }
 
-.con {
-    margin: 10px 0;
-    margin-bottom: 20px;
-}
-
 .questioncontrol {
     min-height: 80px; /* Adjust height to reduce space */
     padding-top: 5px;
     margin-bottom: 0; /* Remove bottom margin */
 }
 
-.questioncontrolcontrol {
-    min-height: 60px;
-    padding-top: 5px;
-    margin-bottom: 10px;
-}
-
-.smallq {
-    font-size: 13px;
-    margin-bottom: 5px;
-    font-weight:400;
-    font-family: 微軟正黑體;
-    color:#77556e;
-}
-
 .te textarea,
 .te input {
     border-radius: 5px;
-    border: 1px solid #636363;
+    border: 1px solid #d499c4;
     margin-top: 5px;
     padding-left: 8px;
     padding-top: 5px;
@@ -151,32 +155,6 @@
 .te input:focus,
 .te textarea:valid,
 .te input:valid {
-    border: 2px solid #414141;
-    color: #414141;
-}
-
-.sub{
-    height:110px;
-    margin-top:5px;
-}
-
-.submit {
-    padding-top: 15px;
-}
-
-.btn-secondary {
-    font-size: 15px;
-    padding: 8px 15px;
-    border: 1px solid #636363;
-    border-radius: 5px;
-    background-color: #f8f9fa;
-    color: #636363;
-    transition: 0.3s ease;
-}
-
-.btn-secondary:hover {
-    border: 2px solid #414141;
-    color: #414141;
-    font-size: 20px;
-    background-color: #FCFCFC;
+    border: 2px solid #d666b8;
+    color: #d666b8;
 }

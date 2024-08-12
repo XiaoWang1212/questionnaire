@@ -7,8 +7,8 @@
             rgba(255, 255, 255, 0.5),
             rgba(255, 255, 255, 0.5) 
         ),
-        url("/static/images/scenery.jpg");    
-    background-size: cover;
+        url("/static/images/scenery.ba0881d14903.jpg");    
+    background-size: 150%, 150%;
     background-position: center;
     background-repeat: no-repeat;
     font-family: "Montserrat", sans-serif;

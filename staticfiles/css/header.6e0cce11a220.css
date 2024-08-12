@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Noto+Sans+SC:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -44,6 +43,7 @@ header {
 .navbar-nav li a:hover {
     font-size: 1.04em;
     color:#ededed;
+    font-family: "Montserrat", sans-serif;
 }
 
 .navbar-brand {
@@ -70,11 +70,4 @@ header {
     font-size: 1.04em;
     color: #ededed;
     box-shadow:3px 3px 3px #1a1a1a;
-}
-
-.form-link {
-    font-family: "Noto Sans SC", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 1em;
-    font-style: normal;
 }
