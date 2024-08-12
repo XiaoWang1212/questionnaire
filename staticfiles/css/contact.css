@@ -3,7 +3,7 @@
 .containerContact {
     background: #ffffff;
     font-family: "Montserrat", sans-serif;
-    color: #d499c4;
+    color: #636363;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@
 .alert {
     width: 450px;
     height: 45px;
-    background: #d499c4;
+    background: #636363;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -28,20 +28,20 @@
 
 .card {
     width: 60%;
-    border: 1px solid #d499c4;
+    border: 1px solid #636363;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
 .card-header {
     background-color: #f8f9fa;
-    border-bottom: 1px solid #d499c4;
+    border-bottom: 1px solid #636363;
     padding-top: 15px;
 
     align-items: center;
     font-size: 18px;
     font-weight: 500;
-    color: #d499c4;
+    color: #636363;
 }
 
 
@@ -49,7 +49,7 @@
     padding: 10px;
     text-align: right;
     background-color: #f8f9fa;
-    border-top: 1px solid #d499c4;
+    border-top: 1px solid #636363;
 }
 
 .g-recaptcha {
@@ -59,16 +59,16 @@
 input[type="submit"] {
     font-size: 15px;
     padding: 8px 15px;
-    border: 1px solid #d499c4;
+    border: 1px solid #636363;
     border-radius: 5px;
     background-color: #f8f9fa;
-    color: #d499c4;
+    color: #636363;
     transition: 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    border: 2px solid #d666b8;
-    color: #d666b8;
+    border: 2px solid #414141;
+    color: #414141;
     font-size: 20px;
     background-color: #FCFCFC;
 }
@@ -92,7 +92,7 @@ input[type="submit"]:hover {
     padding: 0 10px;
     line-height: 40px;
     border-radius: 5px;
-    border: 1px solid #d499c4;
+    border: 1px solid #636363;
     transition: 0.2s ease;
     z-index: 2;
 }
@@ -101,7 +101,7 @@ input[type="submit"]:hover {
     position: absolute;
     font-size: 1em;
     font-weight: 300;
-    color: #d499c4;
+    color: #636363;
     font-weight: 350;
     white-space: nowrap;
     margin-left: 12px;
@@ -113,14 +113,14 @@ input[type="submit"]:hover {
 .entryarea input:hover,
 .entryarea input:valid,
 .entryarea input:focus {
-    color: #d666b8;
-    border: 2px solid #d666b8;
+    color: #414141;
+    border: 2px solid #414141;
 }
 
 .entryarea input:hover + .smallcontrol,
 .entryarea input:valid + .smallcontrol,
 .entryarea input:focus + .smallcontrol {
-    color: #d666b8;
+    color: #414141;
     height: 30px;
     line-height: 30px;
     padding-left: 4px;
@@ -139,7 +139,7 @@ input[type="submit"]:hover {
 .te textarea,
 .te input {
     border-radius: 5px;
-    border: 1px solid #d499c4;
+    border: 1px solid #636363;
     margin-top: 5px;
     padding-left: 8px;
     padding-top: 5px;
@@ -155,6 +155,6 @@ input[type="submit"]:hover {
 .te input:focus,
 .te textarea:valid,
 .te input:valid {
-    border: 2px solid #d666b8;
-    color: #d666b8;
+    border: 2px solid #414141;
+    color: #414141;
 }

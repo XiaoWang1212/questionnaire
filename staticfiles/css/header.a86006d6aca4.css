@@ -10,7 +10,7 @@ a,
 button {
     font-weight: 500px;
     font-size: 16px;
-    color: #ededed;
+    color: #dcdcdc;
     text-decoration: none;
 }
 
@@ -20,7 +20,7 @@ header {
     align-items: center;
     padding: 30px 10%;
     font-family: 微軟正黑體;
-    color: #ededed;
+    color: #dcdcdc;
     background-color:#414141;
 }
 
@@ -42,7 +42,7 @@ header {
 
 .navbar-nav li a:hover {
     font-size: 1.04em;
-    color:#ededed;
+    color:#b1b1b1;
 }
 
 .navbar-brand {
@@ -62,11 +62,11 @@ header {
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    color: #ededed;
+    color: #FCFCFC;
 }
 
 .contactus a:hover {
     font-size: 1.04em;
-    color: #ededed;
-    box-shadow:3px 3px 3px #1a1a1a;
+    color: #fbfbfb;
+    box-shadow:5px 5px 5px #ffffff;
 }
