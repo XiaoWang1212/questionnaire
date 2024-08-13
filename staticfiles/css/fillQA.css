@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 .container {
-    /*background: #fff */
-    background: 
-        linear-gradient(
-            rgba(255, 255, 255, 0.5),
-            rgba(255, 255, 255, 0.5) 
-        ),
-        url("/static/images/scenery.jpg");    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #fff;
     font-family: "Montserrat", sans-serif;
     color: #636363;
     display: flex;
